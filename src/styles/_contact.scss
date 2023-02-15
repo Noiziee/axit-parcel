@@ -1,0 +1,47 @@
+.contact {
+  &__inner {
+    @include padding-section;
+  }
+
+  &__subtitle {
+    margin-bottom: 90px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__col {
+    flex: 0 1 50%;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding: 17px 124px;
+    margin-top: 17px;
+    font-size: 18px;
+  }
+}
+
+.form-textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  padding-bottom: 138px;
+  border-bottom: 1px solid #BDBDBD;
+
+  &::placeholder {
+    font-family: inherit;
+    font-weight: 400;
+    color: #bdbdbd;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 42px;
+  padding-bottom: 54px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    background-color: #ec7979;
+    width: 170px;
+    height: 1px;
+    transform: translateX(-50%);
+  }
+}
+
+.subtitle {
+  color: #86878b;
+  text-align: center;
+  padding-top: 40px;
+}

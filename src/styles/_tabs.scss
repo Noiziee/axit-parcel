@@ -1,0 +1,75 @@
+.tabs {
+  padding-top: 100px;
+
+  label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 14px;
+    color: #333;
+    width: 184px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    text-transform: uppercase;
+  }
+
+  input[type='radio'] {
+    display: none;
+  }
+
+  input[type='radio']:checked+label {
+    border: 1px solid #c6cbcd;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.tab {
+  &__content-inner {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #c6cbcd;
+    display: none;
+  }
+
+  &__content {
+    margin: 20px 0 0 100px;
+  }
+
+  &__content-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__content-text {
+    font-size: 18px;
+    max-width: 570px;
+    margin-bottom: 27px;
+  }
+
+  &__btn-download {
+    background-color: #ec7979;
+
+    &:hover {
+      background-color: #c54949;
+    }
+  }
+
+  &__content-image {
+    line-height: 0;
+  }
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: flex;
+}

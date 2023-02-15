@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <title>AXIT</title>
+  <link rel="stylesheet" href="./styles/app.scss">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo-img" src="./images/logo.svg" alt="AXIT">
+        </a>
+        <div class="burger-menu">
+          <input id="menu__toggle" type="checkbox" style="display: none" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <nav class="nav">
+            <a class="nav__link" href="#">features</a>
+            <a class="nav__link" href="#">About</a>
+            <a class="nav__link" href="#">Pricing</a>
+            <a class="nav__link" href="#">Reviews</a>
+            <a class="nav__link" href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <img class="intro__logo-large" src="./images/logo-intro.svg" alt="AXIT">
+            <h1 class="intro__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+            <p class="intro__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <a class="intro__btn btn btn-transparent" href="#" download="#">Download</a>
+          </div>
+          <div class="intro__form">
+            <h4 class="intro__form-title">Try Your <span>FREE</span> Trial Today</h4>
+            <form class="form-top" action="#" method="post">
+              <input class="form-input" type="text" name="name" placeholder="Name">
+              <input class="form-input" type="email" name="mail" placeholder="Email">
+              <input class="form-input" type="password" name="password" placeholder="Password">
+            </form>
+            <button class="form-top__button button-form" type="submit">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="media">
+      <div class="container">
+        <div class="media__inner">
+          <div class="media__col">
+            <h4 class="media__title">Social Media</h4>
+            <p class="media__lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean euismod bibendum laoreet.
+            </p>
+          </div>
+          <div class="media__col social">
+            <div class="social-icon">
+              <a class="social-icon__link" href="#">
+                <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+                  <use href="./images/icon/social/facebook.svg#facebookIcon"></use>
+                </svg>
+              </a>
+              <a class="social-icon__link" href="#">
+                <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+                  <use href="./images/icon/social/twitter.svg#twitterIcon"></use>
+                </svg>
+              </a>
+              <a class="social-icon__link" href="#">
+                <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+                  <use href="./images/icon/social/linkedin.svg#linkedinIcon"></use>
+                </svg>
+              </a>
+              <a class="social-icon__link" href="#">
+                <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+                  <use href="./images/icon/social/pinterest.svg#pinterestIcon"></use>
+                </svg>
+              </a>
+              <a class="social-icon__link" href="#">
+                <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+                  <use href="./images/icon/social/instagram.svg#instagramIcon"></use>
+                </svg>
+              </a>
+              <a class="social-icon__link" href="#">
+                <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+                  <use href="./images/icon/social/github.svg#githubIcon"></use>
+                </svg>
+              </a>
+              <a class="social-icon__link" href="#">
+                <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+                  <use href="./images/icon/social/rss.svg#rssIcon"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tabs">
+      <div class="container">
+        <div class="tabs">
+          <input type="radio" name="tab-btn" id="tab-btn-1" checked />
+          <label for="tab-btn-1">tab 1</label>
+          <input type="radio" name="tab-btn" id="tab-btn-2" />
+          <label for="tab-btn-2">tab 2</label>
+          <input type="radio" name="tab-btn" id="tab-btn-3" />
+          <label for="tab-btn-3">tab 3</label>
+
+          <div id="content-1" class="tab__content-inner">
+            <div class="tab__content">
+              <h3 class="tab__content-title">
+                Tabs with soft transitioning effect.
+              </h3>
+              <p class="tab__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod<br />
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                viverra<br />
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+              </p>
+              <p class="tab__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet.
+              </p>
+              <a class="tab__btn-download btn" href="#" download="">Download</a>
+            </div>
+            <div class="tab__content-image">
+              <img src="./images/tab-img.jpg" alt="image" class="tab__image" />
+            </div>
+          </div>
+          <div id="content-2" class="tab__content-inner">
+            <div class="tab__content">
+              <h3 class="tab__content-title">
+                2Tabs with soft transitioning effect.
+              </h3>
+              <p class="tab__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod<br />
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                viverra<br />
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+              </p>
+              <p class="tab__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet.
+              </p>
+              <a class="tab__btn-download btn" href="#" download="">Download</a>
+            </div>
+            <div class="tab__content-image">
+              <img src="./images/tab-img.jpg" alt="image" class="tab__image" />
+            </div>
+          </div>
+          <div id="content-3" class="tab__content-inner">
+            <div class="tab__content">
+              <h3 class="tab__content-title">
+                3Tabs with soft transitioning effect.
+              </h3>
+              <p class="tab__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod<br />
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                viverra<br />
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+              </p>
+              <p class="tab__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet.
+              </p>
+              <a class="tab__btn-download btn" href="#" download="">Download</a>
+            </div>
+            <div class="tab__content-image">
+              <img src="./images/tab-img.jpg" alt="image" class="tab__image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="awesome">
+      <div class="container">
+        <div class="awesome__inner">
+          <h2 class="awesome__title title">WHY THIS IS AWESOME</h2>
+          <p class="awesome__subtitle subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="awesome__row">
+            <div class="awesome__column">
+              <img class="awesome__column-icon" src="./images/01.svg" alt="images" />
+              <h3 class="awesome__column-title">Thoughtful Design</h3>
+              <p class="awesome__column-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                amet lacus accumsan et viverra.
+              </p>
+            </div>
+            <div class="awesome__column">
+              <img class="awesome__column-icon" src="./images/02.svg" alt="images" />
+              <h3 class="awesome__column-title">Thoughtful Design</h3>
+              <p class="awesome__column-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                amet lacus accumsan et viverra.
+              </p>
+            </div>
+            <div class="awesome__column">
+              <img class="awesome__column-icon" src="./images/03.svg" alt="images" />
+              <h3 class="awesome__column-title">Thoughtful Design</h3>
+              <p class="awesome__column-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                amet lacus accumsan et viverra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <div class="pricing__top">
+          <h2 class="pricing__title title">
+            pricing options
+          </h2>
+          <p class="pricing__subtitle subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="pricing__row">
+          <div class="pricing__col">
+            <div class="pricing__card">
+              <h4 class="pricing__card-title">Basic</h4>
+              <div class="pricing__card-price">$10</div>
+              <div class="pricing__card-text">Free for life</div>
+              <ul class="pricing__list">
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing__col">
+            <div class="pricing__card card-shadow">
+              <h4 class="pricing__card-title">Optima</h4>
+              <div class="pricing__card-price">$20</div>
+              <div class="pricing__card-text">Free for life</div>
+              <ul class="pricing__list">
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing__col">
+            <div class="pricing__card ">
+              <h4 class="pricing__card-title">Pro</h4>
+              <div class="pricing__card-price">$30</div>
+              <div class="pricing__card-text">Free for life</div>
+              <ul class="pricing__list">
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+                <li class="pricing__list-item">
+                  <a class="pricing__list-link" href="#">1 gb of space</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customers">
+      <div class="container">
+        <h2 class="customers__title title">
+          what our customers are saying
+        </h2>
+        <p class="customers__subtitle subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="customers__row">
+          <div class="customers__col">
+            <div class="customers__col-content">
+              <p class="content__text">
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Doloribus
+                accusamus expedita repellat similique
+                odio aspernatur ex, architecto eaque
+                quo suscipit.
+              </p>
+            </div>
+            <div class="user__col">
+              <div class="user__avatar">
+                <img class="user__avatar-image" src="./images/user-1.png" alt="Davis Rhiel Madsen">
+              </div>
+              <div class="user__info">
+                <h4 class="user__info-name">
+                  Davis Rhiel Madsen
+                </h4>
+                <div class="user__info-profession">
+                  Manager
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customers__col">
+            <div class="customers__col-content">
+              <p class="content__text">
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Doloribus
+                accusamus expedita repellat similique
+                odio aspernatur ex, architecto eaque
+                quo suscipit.
+              </p>
+            </div>
+            <div class="user__col">
+              <div class="user__avatar">
+                <img class="user__avatar-image" src="./images/user-2.png" alt="Jaydon Rosser">
+              </div>
+              <div class="user__info">
+                <h4 class="user__info-name">
+                  Jaydon Rosser
+                </h4>
+                <div class="user__info-profession">
+                  Manager
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customers__col">
+            <div class="customers__col-content">
+              <p class="content__text">
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Doloribus
+                accusamus expedita repellat similique
+                odio aspernatur ex, architecto eaque
+                quo suscipit.
+              </p>
+            </div>
+            <div class="user__col">
+              <div class="user__avatar">
+                <img class="user__avatar-image" src="./images/user-3.png" alt="Cooper Dorwart">
+              </div>
+              <div class="user__info">
+                <h4 class="user__info-name">
+                  Cooper Dorwart
+                </h4>
+                <div class="user__info-profession">
+                  Manager
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="design">
+      <div class="container">
+        <div class="design__inner">
+          <h2 class="design__title title">STYLISH AXURE DESIGN</h2>
+          <p class="design__subtitle subtitle">
+            Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
+          </p>
+          <a class="design__btn btn btn-transparent" href="#" download="#">Download</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <h2 class="contact__title title">contact us</h2>
+          <p class="contact__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="contact__row">
+            <div class="contact__col">
+              <form class="form-bottom" action="#" method="get">
+                <input class="form-input" type="text" name="name" placeholder="Name">
+                <input class="form-input" type="email" name="mail" placeholder="Email">
+                <input class="form-input" type="password" name="password" placeholder="Password">
+              </form>
+            </div>
+            <div class="contact__col">
+              <form class="form-bottom" action="#" method="post">
+                <textarea class="form-textarea" name="message" placeholder="Message"></textarea>
+              </form>
+            </div>
+          </div>
+          <button class="contact__button button-form" type="submit">Send Message</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="social-icon">
+          <a class="social-icon__link" href="#">
+            <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+              <use href="./images/icon/social/facebook.svg#facebookIcon"></use>
+            </svg>
+          </a>
+          <a class="social-icon__link" href="#">
+            <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+              <use href="./images/icon/social/twitter.svg#twitterIcon"></use>
+            </svg>
+          </a>
+          <a class="social-icon__link" href="#">
+            <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+              <use href="./images/icon/social/linkedin.svg#linkedinIcon"></use>
+            </svg>
+          </a>
+          <a class="social-icon__link" href="#">
+            <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+              <use href="./images/icon/social/pinterest.svg#pinterestIcon"></use>
+            </svg>
+          </a>
+          <a class="social-icon__link" href="#">
+            <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+              <use href="./images/icon/social/instagram.svg#instagramIcon"></use>
+            </svg>
+          </a>
+          <a class="social-icon__link" href="#">
+            <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+              <use href="./images/icon/social/github.svg#githubIcon"></use>
+            </svg>
+          </a>
+          <a class="social-icon__link" href="#">
+            <svg aria-hidden="true" height="70" width="70" class="social-icon__img">
+              <use href="./images/icon/social/rss.svg#rssIcon"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__copy">© 2015 Axure Themes</div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+
+</html>

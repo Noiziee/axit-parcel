@@ -1,0 +1,44 @@
+.media {
+  background-color: #F8EFEF;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  &__lead {
+    max-width: 470px;
+    color: #86878B;
+  }
+}
+
+.social {}
+
+.social-icon {
+  display: flex;
+  gap: 30px;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: #ccc;
+    transition: all .2s linear;
+
+    &:hover {
+      color: #ec7979;
+      transform: scale(1.2);
+    }
+  }
+}
