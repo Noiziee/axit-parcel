@@ -67,13 +67,13 @@
     color: inherit;
     padding: 10px 10px;
   }
-}
 
-.pricing__card-title,
-.pricing__card-price,
-.pricing__card-text,
-.pricing__list {
-  border: 1px solid #f5f5f5;
+  &__card-title,
+  &__card-price,
+  &__card-text,
+  &__list {
+    border: 1px solid #f5f5f5;
+  }
 }
 
 .card-shadow {
