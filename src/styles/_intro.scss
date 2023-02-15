@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba($color-black, 0.5);
   }
 
   &__inner {
@@ -35,7 +35,7 @@
     max-width: 670px;
     font-weight: 500;
     font-size: 48px;
-    color: #fff;
+    color: $color-white;
     position: relative;
     padding-bottom: 55px;
 
@@ -43,7 +43,7 @@
       content: '';
       width: 170px;
       height: 1px;
-      background-color: #fff;
+      background-color: $color-white;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -52,13 +52,13 @@
 
   &__lead {
     max-width: 270px;
-    color: #fff;
+    color: $color-white;
     margin: 42px 0;
   }
 
   &__form {
     font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
+    background-color: $color-white;
     border-radius: 10px;
     padding-top: 35px;
     flex-basis: 470px;
@@ -67,13 +67,13 @@
   &__form-title {
     font-weight: 700;
     font-size: 24px;
-    color: #333333;
+    color: #333;
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 45px;
 
     span {
-      color: #EC7979;
+      color: $color-light-red;
       text-transform: uppercase;
     }
   }
@@ -95,7 +95,7 @@
   font-size: 18px;
   width: 100%;
   display: block;
-  border-bottom: 1px solid #BDBDBD;
+  border-bottom: 1px solid #bdbdbd;
   padding-bottom: 16px;
   margin-bottom: 33px;
 
@@ -104,5 +104,61 @@
     font-weight: 400;
     color: #bdbdbd;
     font-size: 14px;
+  }
+}
+
+// =================================================
+@media (max-width: 1024px) {
+
+  .intro {
+    &__title {
+      font-size: 36px;
+      max-width: 460px;
+      padding-bottom: 41px;
+    }
+
+    &__lead {
+      margin: 31px 0;
+    }
+  }
+
+  .form-top {
+    &__button {
+      margin-top: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__content {
+      text-align: center;
+      margin-top: 85px;
+    }
+
+    &__title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__lead {
+      max-width: 100%;
+    }
+
+    &__logo-large {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    &__form {
+      margin-bottom: 50px;
+    }
   }
 }

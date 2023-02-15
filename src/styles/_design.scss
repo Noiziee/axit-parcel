@@ -14,7 +14,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba($color-black, 0.5);
   }
 
   &__inner {
@@ -28,20 +28,51 @@
   }
 
   &__title {
-    color: #fff;
+    color: $color-white;
 
     &::after {
       content: '';
-      background-color: #fff;
+      background-color: $color-white;
     }
   }
 
   &__subtitle {
-    color: #fff;
+    color: $color-white;
     margin-bottom: 73px;
   }
 
   &__btn {
     padding: 17px 139px;
+  }
+}
+
+
+// ========================================================
+
+@media (max-width: 1024px) {
+  .design {
+    &__btn {
+      padding: 17px 139px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .design {
+    &__inner {
+      padding: 60px 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .design {
+    &__subtitle {
+      margin-bottom: 50px;
+    }
+
+    &__btn {
+      padding: 17px 98px;
+    }
   }
 }

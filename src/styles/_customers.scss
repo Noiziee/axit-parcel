@@ -65,3 +65,47 @@
     margin-bottom: 15px;
   }
 }
+
+// =======================================================
+@media (max-width: 1024px) {
+  .user {
+    &__info-name {
+      font-size: 18px;
+    }
+
+    &__info-profession {
+      .content__text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .customers {
+    &__row {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .customers {
+    padding: 60px 0;
+
+    &__row {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .user {
+
+    &__info-profession,
+    &__info-name {
+      font-size: 14px;
+    }
+  }
+}

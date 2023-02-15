@@ -36,12 +36,51 @@
   width: 100%;
   display: block;
   padding-bottom: 138px;
-  border-bottom: 1px solid #BDBDBD;
+  border-bottom: 1px solid #bdbdbd;
 
   &::placeholder {
     font-family: inherit;
     font-weight: 400;
     color: #bdbdbd;
     font-size: 14px;
+  }
+}
+
+// ===================================================
+
+@media (max-width: 1024px) {
+  .contact {
+    &__subtitle {
+      margin-bottom: 72px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    &__row {
+      display: block;
+    }
+
+    &__inner {
+      padding: 60px 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    &__button {
+      padding: 14px 89px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .contact {
+    &__button {
+      font-size: 13px;
+    }
   }
 }

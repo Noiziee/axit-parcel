@@ -2,19 +2,19 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 15px;
-  color: #fff;
+  color: $color-white;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #ec7979;
+  background-color: $color-light-red;
   padding: 19px 20px;
   transition: all .3s;
 
   &:hover {
-    background-color: #ab4949;
+    background-color: $color-dark-red;
   }
 
   &:active {
-    background-color: #ec7979;
+    background-color: $color-light-red;
   }
 }

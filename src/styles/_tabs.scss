@@ -24,7 +24,7 @@
 
   input[type='radio']:checked+label {
     border: 1px solid #c6cbcd;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $color-white;
   }
 }
 
@@ -56,10 +56,10 @@
   }
 
   &__btn-download {
-    background-color: #ec7979;
+    background-color: $color-light-red;
 
     &:hover {
-      background-color: #c54949;
+      background-color: $color-dark-red;
     }
   }
 
@@ -72,4 +72,69 @@
 #tab-btn-2:checked~#content-2,
 #tab-btn-3:checked~#content-3 {
   display: flex;
+}
+
+
+// =================================================
+
+@media (max-width: 1024px) {
+  .tab {
+    &__content-title {
+      font-size: 24px;
+      margin-bottom: 38px;
+    }
+
+    &__content-text {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .tab {
+    &__content-image {
+      display: none;
+    }
+
+    &__content-inner {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    margin-top: 40px;
+
+    label {
+      width: 100px;
+      height: 40px;
+    }
+  }
+
+  .tab {
+    &__content {
+      margin: 30px 24px;
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+  .tabs {
+    label {
+      width: 87px;
+    }
+
+    &__content-title {
+      font-size: 18px;
+      margin-bottom: 29px;
+    }
+
+    &__content-text {
+      font-size: 13px;
+      margin-bottom: 29px;
+    }
+  }
 }

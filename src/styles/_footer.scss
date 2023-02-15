@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000;
+  background-color: $color-black;
   padding: 35px 0 27px 0;
 
   &__inner {
@@ -10,6 +10,14 @@
 
   &__copy {
     margin-top: 28px;
-    color: #fff;
+    color: $color-white;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    &__copy {
+      font-size: 14px;
+    }
   }
 }

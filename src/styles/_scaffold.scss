@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.1;
-  color: #000;
+  color: $color-black;
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    background-color: #ec7979;
+    background-color: $color-light-red;
     width: 170px;
     height: 1px;
     transform: translateX(-50%);
@@ -33,7 +33,20 @@ body {
 }
 
 .subtitle {
-  color: #86878b;
+  color: $color-grey;
   text-align: center;
   padding-top: 40px;
+}
+
+// =================================================================
+@media (max-width: 1024px) {
+  .title {
+    font-size: 24px;
+    padding-bottom: 50px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    padding-top: 32px;
+  }
 }

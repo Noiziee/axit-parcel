@@ -1,15 +1,15 @@
 .btn-transparent {
-  border: 2px solid #fff;
+  border: 2px solid $color-white;
   transition: all .3s;
 
   &:hover {
-    border-color: #EC7979;
-    color: #EC7979;
+    border-color: $color-light-red;
+    color: $color-light-red;
   }
 
   &:active {
-    color: #fff;
-    background-color: #AB4949;
-    border-color: #AB4949;
+    color: $color-white;
+    background-color: $color-dark-red;
+    border-color: $color-dark-red;
   }
 }

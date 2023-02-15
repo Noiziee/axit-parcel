@@ -12,18 +12,16 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: #333333;
+    color: #333;
     text-transform: capitalize;
     margin-bottom: 20px;
   }
 
   &__lead {
     max-width: 470px;
-    color: #86878B;
+    color: $color-grey;
   }
 }
-
-.social {}
 
 .social-icon {
   display: flex;
@@ -37,8 +35,57 @@
     transition: all .2s linear;
 
     &:hover {
-      color: #ec7979;
+      color: $color-light-red;
       transform: scale(1.2);
+    }
+  }
+}
+
+// ==========================================================
+
+@media (max-width: 1024px) {
+  .media {
+    &__inner {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+
+      .social-icon {
+        gap: 20px;
+      }
+    }
+  }
+
+  .social-icon {
+    &__img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .social-icon {
+    gap: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .media {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__lead {
+      font-size: 14px;
+    }
+  }
+
+  .social-icon {
+    &__img {
+      width: 28px;
+      height: 26px;
+      object-fit: cover;
     }
   }
 }
