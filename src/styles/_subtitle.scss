@@ -1,0 +1,13 @@
+.subtitle {
+  color: $color-grey;
+  text-align: center;
+  padding-top: 40px;
+}
+
+// =================================================================
+@media (max-width: 1024px) {
+  .subtitle {
+    font-size: 14px;
+    padding-top: 32px;
+  }
+}
